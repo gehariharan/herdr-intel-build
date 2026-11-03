@@ -4,7 +4,9 @@ Unofficial, reproducible source-build workflow for [Herdr](https://github.com/he
 
 ## Download
 
-Open [Releases](../../releases/latest) and download `herdr-app-macos-x86_64.tar.gz`. Extract it and move `Herdr.app` into `~/Applications`. Requires an Intel Mac running macOS 15 or newer.
+Open [Releases](https://github.com/gehariharan/herdr-intel-build/releases/latest) and download `herdr-app-macos-x86_64.tar.gz`. Extract it and move `Herdr.app` into `~/Applications`. Requires an Intel Mac running macOS 15 or newer.
+
+To verify the download, save `SHA256SUMS` in the same folder as the archive and run `shasum -a 256 -c SHA256SUMS` there.
 
 The app is ad-hoc signed, not Apple notarized. If macOS blocks it, use System Settings → Privacy & Security → Open Anyway after attempting to open it. Herdr needs herdr-core; the app can help install the official core. Source builds do not auto-update.
 
